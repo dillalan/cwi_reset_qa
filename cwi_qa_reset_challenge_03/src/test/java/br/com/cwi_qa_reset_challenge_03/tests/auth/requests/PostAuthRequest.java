@@ -18,7 +18,7 @@ public class PostAuthRequest {
     }
 
     public String getToken(){
-        return "token:"+this.callToken()
+        return "token="+this.callToken()
                 .then()
                 .statusCode(200)
                 .extract()
