@@ -1,4 +1,4 @@
-package br.com.cwi_qa_reset_challenge_03.tests.auth.requests.payloads;
+package br.com.cwi_qa_reset_challenge_03.tests.auth.payloads;
 
 import org.json.JSONObject;
 

@@ -1,4 +1,4 @@
-package br.com.cwi_qa_reset_challenge_03.tests.booking.requests.payloads;
+package br.com.cwi_qa_reset_challenge_03.tests.booking.payloads;
 
 import org.json.JSONObject;
 

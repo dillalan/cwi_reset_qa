@@ -1,8 +1,7 @@
 package br.com.cwi_qa_reset_challenge_03.tests.auth.requests;
 
-import br.com.cwi_qa_reset_challenge_03.tests.auth.requests.payloads.AuthPayloads;
+import br.com.cwi_qa_reset_challenge_03.tests.auth.payloads.AuthPayloads;
 import io.restassured.response.Response;
-import org.json.JSONObject;
 
 import static io.restassured.RestAssured.given;
 

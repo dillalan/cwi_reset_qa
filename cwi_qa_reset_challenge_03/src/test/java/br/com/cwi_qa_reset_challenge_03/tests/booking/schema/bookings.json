@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items":{
+    "$id": "#root/items",
+    "type": "object",
+    "required": [
+      "bookingid"
+    ],
+    "properties": {
+      "bookingid": {
+        "type": "integer"
+      }
+    }
+  }
+
+}

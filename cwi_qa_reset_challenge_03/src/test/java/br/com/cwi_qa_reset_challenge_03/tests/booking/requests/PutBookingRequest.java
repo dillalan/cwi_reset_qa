@@ -1,6 +1,6 @@
 package br.com.cwi_qa_reset_challenge_03.tests.booking.requests;
 
-import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.payloads.BookingPayloads;
+import br.com.cwi_qa_reset_challenge_03.tests.booking.payloads.BookingPayloads;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
