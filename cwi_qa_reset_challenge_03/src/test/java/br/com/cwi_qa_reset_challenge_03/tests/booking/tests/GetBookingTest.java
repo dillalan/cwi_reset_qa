@@ -1,4 +1,4 @@
-package br.com.cwi_qa_reset_challenge_03.tests.booking;
+package br.com.cwi_qa_reset_challenge_03.tests.booking.tests;
 
 import br.com.cwi_qa_reset_challenge_03.suites.AllTests;
 import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.GetBookingRequest;

@@ -1,4 +1,4 @@
-package br.com.cwi_qa_reset_challenge_03.tests.ping;
+package br.com.cwi_qa_reset_challenge_03.tests.ping.tests;
 
 import br.com.cwi_qa_reset_challenge_03.suites.AllTests;
 import br.com.cwi_qa_reset_challenge_03.tests.ping.requests.GetPingRequest;
