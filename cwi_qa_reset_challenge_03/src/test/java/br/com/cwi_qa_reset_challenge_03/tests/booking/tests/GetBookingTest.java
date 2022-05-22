@@ -1,5 +1,6 @@
 package br.com.cwi_qa_reset_challenge_03.tests.booking.tests;
 
+import br.com.cwi_qa_reset_challenge_03.base.BaseTest;
 import br.com.cwi_qa_reset_challenge_03.suites.AllTests;
 import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.GetBookingRequest;
 import org.junit.Test;
@@ -7,7 +8,7 @@ import org.junit.experimental.categories.Category;
 
 import static org.hamcrest.Matchers.greaterThan;
 
-public class GetBookingTest {
+public class GetBookingTest extends BaseTest {
 
     GetBookingRequest getBookingRequest = new GetBookingRequest();
 
