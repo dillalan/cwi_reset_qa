@@ -5,6 +5,9 @@ import br.com.cwi_qa_reset_challenge_03.suites.AllTests;
 import br.com.cwi_qa_reset_challenge_03.suites.ContractTests;
 import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.GetBookingRequest;
 import br.com.cwi_qa_reset_challenge_03.utils.Utils;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -18,7 +21,9 @@ public class GetBookingTest extends BaseTest {
     GetBookingRequest getBookingRequest = new GetBookingRequest();
 
     @Test
+    @Severity(SeverityLevel.BLOCKER)
     @Category(AllTests.class)
+    @DisplayName("Valida o retorno da listagem de IDs")
     public void validateBookingListIds(){
         getBookingRequest.getBooking().then()
                 .statusCode(200)
@@ -26,7 +31,9 @@ public class GetBookingTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.BLOCKER)
     @Category({AllTests.class, ContractTests.class})
+    @DisplayName("Valida o SCHEMA da lista de reservas")
     public void validateListBookingSchema() {
         getBookingRequest.getBooking().then()
                 .statusCode(200)

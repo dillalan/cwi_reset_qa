@@ -5,6 +5,9 @@ import br.com.cwi_qa_reset_challenge_03.suites.AllTests;
 import br.com.cwi_qa_reset_challenge_03.tests.auth.requests.PostAuthRequest;
 import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.GetBookingRequest;
 import br.com.cwi_qa_reset_challenge_03.tests.booking.requests.PutBookingRequest;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -17,7 +20,9 @@ public class PutBookingTest extends BaseTest {
     PostAuthRequest postAuthRequest = new PostAuthRequest();
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Category(AllTests.class)
+    @DisplayName("Valida a atualização de uma reserva usando um token")
     public void validateUpdateBookingWithToken(){
         int id = getBookingRequest.getBooking()
                         .then()
