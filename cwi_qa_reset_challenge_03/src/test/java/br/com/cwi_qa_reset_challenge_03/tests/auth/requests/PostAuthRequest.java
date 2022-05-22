@@ -1,5 +1,6 @@
 package br.com.cwi_qa_reset_challenge_03.tests.auth.requests;
 
+import br.com.cwi_qa_reset_challenge_03.tests.auth.requests.payloads.AuthPayloads;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 
@@ -7,14 +8,12 @@ import static io.restassured.RestAssured.given;
 
 public class PostAuthRequest {
 
-    JSONObject payload = new JSONObject()
-            .put("username", "admin")
-            .put("password","password123");
+    AuthPayloads authPayloads = new AuthPayloads();
     public Response callToken(){
         return given()
                 .header("Content-Type", "application/json")
                 .when()
-                .body(payload.toString())
+                .body(authPayloads.jsonObjectAuthLogin().toString())
                 .post("https://treinamento-api.herokuapp.com/auth");
     }
 
